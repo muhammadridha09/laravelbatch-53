@@ -21,5 +21,13 @@ Route::get('/register', [authController::class, 'form']);
 
 Route::post('/welcome', [authController::class, 'kirim']);
 
+route::get('/master', function(){
+    return view('layout.master');
+});
+route::get('/tabel', function(){
+    return view('packes.tabel');
+});
 
-
+route::get('/data-tabel', function(){
+    return view('packes.data-tabel');
+});
